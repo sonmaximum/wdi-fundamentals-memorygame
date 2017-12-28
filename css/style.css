@@ -1,5 +1,6 @@
 body {
 	text-align: center;
+	margin: 0;
 }
 
 h1 {
@@ -47,10 +48,6 @@ header {
 	background-color: #F15B31;
 	color: #FFFFFF;
 	padding: 30px 20px;
-}
-
-body {
-	margin: 0;
 }
 
 nav {
