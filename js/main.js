@@ -1,9 +1,11 @@
 //bonus addition, function to randomize cards before loading board
 function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
+  var currentIndex = array.length,
+      temporaryValue,
+      randomIndex;
 
   // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
+  while (currentIndex !== 0) {
 
     // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
@@ -20,25 +22,26 @@ function shuffle(array) {
 
 
 var cards = [
-{
-rank: "queen",
-suit: "hearts",
-cardImage: "images/queen-of-hearts.png"
-},
-{
-rank: "queen",
-suit: "diamonds",
-cardImage: "images/queen-of-diamonds.png"
-},
-{
-rank: "king",
-suit: "hearts",
-cardImage: "images/king-of-hearts.png"
-},
-{
-rank: "king",
-suit: "diamonds",
-cardImage: "images/king-of-diamonds.png"}
+  {
+    rank: "queen",
+    suit: "hearts",
+    cardImage: "images/queen-of-hearts.png"
+  },
+  {
+    rank: "queen",
+    suit: "diamonds",
+    cardImage: "images/queen-of-diamonds.png"
+  },
+  {
+    rank: "king",
+    suit: "hearts",
+    cardImage: "images/king-of-hearts.png"
+  },
+  {
+    rank: "king",
+    suit: "diamonds",
+    cardImage: "images/king-of-diamonds.png"
+  }
 ];
 
 cards = shuffle(cards);
@@ -61,7 +64,7 @@ var checkForMatch = function() {
 var tries = 0;
 var matches = 0;
 
-/* Give the browser time to redraw the flipped card 
+/* Give the browser time to redraw the flipped card
 before showing the check for match alert */
 var checkForMatchWait = function(){
 	setTimeout(checkForMatch, 100);
