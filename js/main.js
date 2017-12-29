@@ -64,7 +64,7 @@ var matches = 0
 /* Give the browser time to redraw the flipped card 
 before showing the check for match alert */
 var checkForMatchWait = function(){
-	setTimeout(checkForMatch, 50);
+	setTimeout(checkForMatch, 100);
 }
 var flipCard = function() {
 	if (cardsInPlay.length ===2 ) {
